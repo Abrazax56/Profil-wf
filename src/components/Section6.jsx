@@ -1,8 +1,8 @@
-import Comment from './Comment.jsx'
+import Comments from './Comments.jsx'
 export default function SectionSix() {
   return (
-    <div className="section-five w-100 d-flex flex-column align-items-center">
-      <Comment/>
+    <div className="section-six w-100 d-flex flex-column align-items-center">
+      <Comments/>
     </div>
   );
 }
