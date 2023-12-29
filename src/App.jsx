@@ -11,6 +11,7 @@ import SectionFourth from './components/Section4.jsx'
 import SectionFive from './components/Section5.jsx'
 import SectionSix from './components/Section6.jsx'
 import Admin from './components/Admin.jsx'
+import Scroll from './components/ScrollTop.jsx'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <SectionFourth/>
       <SectionFive/>
       <SectionSix/>
+      <Scroll/>
     </>
   )
 }
