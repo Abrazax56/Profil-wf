@@ -21,7 +21,7 @@ function ListAdmins() {
                 <div className="d-flex justify-content-between">
                   <img className="img-adm ml-2 mb-2" src={e.photo} alt={e.nama}/>
                   <div className="d-flex flex-column justify-content-between"><div><p className="text-white mt-3 px-3 fw-bold fs-6"><span className="px-3 py-1 jabatan">{e.jabatan}</span></p>
-                    <div><p className="quote px-3 mt-1 pb-3 text-white h-100">{e.quote}</p></div></div>
+                    <div><p className="quote px-3 mt-1 pb-3 h-100">{e.quote}</p></div></div>
                     <div className="d-flex flex-wrap gap-3 px-3 mb-3">
                       <a href={e.wa} target="_blank" className="sosmed px-3 py-1 fs-7 text-warning"><i className="bi bi-whatsapp"></i> Whatsapp</a>
                       <a href={e.ig} target="_blank" className="sosmed px-3 py-1 fs-7 text-warning"><i className="bi bi-instagram"></i> Instagram</a>

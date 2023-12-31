@@ -15,7 +15,7 @@ export default function Datas() {
       .then(res => {
         const jsonData = JSON.parse(res.substring(47).slice(0, -2));
         const comment = jsonData.table.rows
-        setArr([...comment])
+        setArr([...comment].reverse())
       });
     };
     fetchData();
@@ -27,7 +27,7 @@ export default function Datas() {
          <div className="komentar" key={comments.c[2].v}>
            <p className="nama-komen px-3 pb-1 pt-1 text-warning"><i className="bi bi-person"></i> {comments.c[1].v}</p>
            <div><p className="text-white px-3 h-100">{comments.c[2].v}</p></div>
-           <div className="px-3 d-flex justify-content-baseline"><p className="wajib fs-7 px-2"><i className="bi bi-clock"></i> {comments.c[0].f}</p></div>
+           <div className="px-3 d-flex justify-content-baseline"><p className="time px-2"><i className="bi bi-clock"></i> {comments.c[0].f}</p></div>
          </div>
         ))
       }

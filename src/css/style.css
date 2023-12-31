@@ -198,6 +198,9 @@ html {
   color: rgba(255, 255, 255, .7);
   border-bottom: 1px solid rgba(255, 155, 0, .2);
 }
+.qut {
+  color: rgba(255, 255, 255, .7);
+}
 .jabatan {
   background-color: rgba(255, 255, 255, .2);
   border-radius: 3px;
@@ -242,6 +245,13 @@ html {
   background-color: rgba(255, 255, 255, .6);
   border-radius: 3px;
   font-family: 'Roboto-Mono', Monospace;
+}
+.time {
+  color: rgba(255, 255, 255, .6);
+  background-color: rgba(0, 0, 0, .7);
+  border-radius: 3px;
+  font-family: 'Roboto-Mono', Monospace;
+  font-size: .8rem;
 }
 .section-five {
   background-image: url('/img/bg4.jpg');
@@ -299,10 +309,11 @@ html {
   background-image: linear-gradient(145deg, rgba(255, 155, 0, .2), rgba(0, 0, 0, .4));
 }
 .box-coment {
-  max-height: 500px;
+  max-height: 400px;
   overflow: auto;
-  border: 1px solid rgba(255, 155, 0, .2);
+  border: 1px solid rgba(255, 155, 0, 1);
   border-radius: 5px;
+  background-color: rgba(0,0,0,.6);
 }
 .komentar {
   border: 1px solid rgba(255, 155, 0, .2);
@@ -359,5 +370,12 @@ html {
   .quote {
     border-bottom: none;
     bottom: 0;
+  }
+  .komenan {
+    display: flex;
+    gap: 30px;
+  }
+  .box-coment, .formulir {
+    width: 50%;
   }
 }
