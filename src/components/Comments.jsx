@@ -3,9 +3,9 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbz5ET1VmY5i2zyNEYsNql
 const form = document.forms['submit-to-google-sheet'];
 function HandelSubmit (e) {
   e.preventDefault();
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-   .then(response => console.log('Success!', response))
-   .catch(error => console.error('Error!', error.message));
+//   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+//    .then(response => console.log('Success!', response))
+//    .catch(error => console.error('Error!', error.message));
   form.reset();
 }
 
