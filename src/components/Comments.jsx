@@ -1,7 +1,12 @@
 import DataComment from './DataComment.jsx'
-function HandleClickSubmit(e) {
-  //e.preventDefault();
-  alert("hello world")
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz5ET1VmY5i2zyNEYsNqlOaBDUf8LQ4mOk12taACnTiDPtm3eb7AWKpOiR9HsWFX24yzw/exec';
+const form = document.forms['submit-to-google-sheet'];
+function HandelSubmit (e) {
+  e.preventDefault();
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+   .then(response => console.log('Success!', response))
+   .catch(error => console.error('Error!', error.message));
+  form.reset();
 }
 
 export default function Comments() {
@@ -12,7 +17,7 @@ export default function Comments() {
         <div className="box-coment d-flex flex-column align-items-baseline gap-3 p-3">
           <DataComment/>
         </div>
-        <form name="submit-to-google-sheet" className="mt-4 formulir">
+        <form name="submit-to-google-sheet" className="mt-4 formulir" onSubmit={HandelSubmit}>
           <label className="text-warning">Masukan nama</label>
           <input type="text" name="nama" className="namakomen comment-nama w-100 p-2 text-warning" placeholder="Masukan nama kamu" required/>
           <label className="text-warning mt-4">Masukan komentar</label>

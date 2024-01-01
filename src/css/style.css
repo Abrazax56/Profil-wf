@@ -54,12 +54,12 @@ html {
 }
 .butscroll {
   position: fixed;
-  width: 100%; 
   text-align: right;
   bottom: 60px;
-  height: 20px; 
+  height: 1px; 
   z-index: 1; 
-  cursor: pointer; 
+  cursor: pointer;
+  right: 0;
 }
 .but {
   cursor: pointer; 
