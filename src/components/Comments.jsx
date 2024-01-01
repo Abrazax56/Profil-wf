@@ -26,9 +26,9 @@ export default function Comments() {
         </div>
         <form id="formulir" ref={form} name="submit-to-google-sheet" className="mt-4 formulir" onSubmit={HandelSubmit}>
           <label className="text-warning">Masukan nama</label>
-          <input type="text" name="nama" className="namakomen comment-nama w-100 p-2 text-warning" placeholder="Masukan nama kamu" required/>
+          <input type="text" name="nama" className="namakomen comment-nama w-100 p-2 text-warning" placeholder="Masukan nama kamu" minlength="4" maxlength="25" required/>
           <label className="text-warning mt-4">Masukan komentar</label>
-          <textarea name="komen" className="komentarny comment-nama w-100 p-2 text-warning" placeholder="Masukan komentar" required></textarea>
+          <textarea name="komen" className="komentarny comment-nama w-100 p-2 text-warning" placeholder="Masukan komentar" minlength="4" maxlength="2500" required></textarea>
           <button type="submit" className="kirim mt-4 p-2 w-100 button">Kirim</button>
           <button className="mt-4 p-2 w-100 button d-none loading" type="button" disabled>
             <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
