@@ -14,6 +14,7 @@ export default function Comments() {
        document.getElementById('formulir').reset()
        document.querySelector(".kirim").classList.toggle('d-none')
        document.querySelector(".loading").classList.toggle('d-none')
+       window.location.reload(false)
      })
      .catch(error => console.error('Error!', error.message));
   }
