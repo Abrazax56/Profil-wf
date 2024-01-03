@@ -382,4 +382,57 @@ html {
   .box-coment, .formulir {
     width: 50%;
   }
+  .garis {
+    display: none;
+  }
+  .aturan {
+    width: 70%;
+  }
+  /*.aturan::after, .aturan::before {
+    display: none;
+  }*/
+  .secbox {
+    display: grid;
+  }
+  .fourth {
+    justify-self: end;
+  }
+  .one::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 80%;
+    transform: translateX(-10%);
+    width: 3px;
+    height: 50px;
+    background: rgba(255, 155, 0, 1);
+  }
+  .one::after {
+    display: none;
+  }
+  .three::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 80%;
+    transform: translateX(-10%);
+    width: 3px;
+    height: 50px;
+    background: rgba(255, 155, 0, 1);
+  }
+  .three::after {
+    content: "";
+    position: absolute;
+    top: -47.4px;
+    left: 80%;
+    width: 3px;
+    height: 50px;
+    background: rgba(255, 155, 0, 1);
+    border-radius: 0;
+    padding: 0;
+    margin-top: 0;
+  }  
+  .fourth::after, .fourth::before {
+    display: none;
+  }
 }
