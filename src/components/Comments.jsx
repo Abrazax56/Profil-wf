@@ -19,9 +19,8 @@ export default function Comments() {
      .catch(error => console.error('Error!', error.message));
   }
   return (
-    <div className="mainSection p-5 d-flex flex-column align-items-baseline">
-      <h1 className="judulkomen judulsection fs-3"><i className="bi bi-chat-dots"></i> Komentar [mendatang...]</h1>
-      <div className="mt-5 p-3 komenan jadwal w-100">
+    <div className="mainSection px-5 pb-5 d-flex flex-column align-items-baseline">
+      <div className="p-3 komenan jadwal w-100">
         <div className="box-coment d-flex flex-column align-items-baseline gap-3 p-3">
           <DataComment/>
         </div>
