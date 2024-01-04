@@ -11,7 +11,7 @@ function ListAdmins() {
   };
 
   return (
-    <div activeIndex={index} onSelect={handleSelect} className="mainSection px-5 mt-1 pb-5 d-flex flex-column align-items-center">
+    <div activeIndex={index} onSelect={handleSelect} className="mainSection px-3 mt-1 pb-5 d-flex flex-column align-items-center">
       <Carousel className="carousel-admin" controls={false}>
         {
           Admins.map(e => (

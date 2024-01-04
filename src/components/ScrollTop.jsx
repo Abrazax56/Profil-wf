@@ -24,7 +24,7 @@ const ScrollButton = () =>{
   window.addEventListener('scroll', toggleVisible); 
   
   return ( 
-    <div className="butscroll py-3 px-5"> 
+    <div className="butscroll py-3 px-4"> 
      <button className="start but px-3 py-2 fs-5 text-warning" onClick={scrollToTop}  
      style={{display: visible ? 'inline' : 'none'}}><i className="bi bi-arrow-up"></i></button> 
     </div> 

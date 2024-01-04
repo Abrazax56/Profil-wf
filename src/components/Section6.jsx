@@ -1,7 +1,7 @@
 import TitleComments from './TitleComments.jsx'
-export default function SectionThree() {
+export default function SectionSix() {
   return (
-    <div className="section-three w-100 d-flex flex-column align-items-center">
+    <div id="Komentar" className="section-three w-100 d-flex flex-column align-items-center">
       <TitleComments/>
     </div>
   );

@@ -11,8 +11,12 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="text-warning" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" className="text-white text-nav">Home</Nav.Link>
-            <Nav.Link href="#link" className="text-white text-nav">Link</Nav.Link>
+            <Nav.Link href="#Tentang" className="text-nav"><i className="bi bi-book"></i> Tentang</Nav.Link>
+            <Nav.Link href="#Peraturan" className="text-nav"><i className="bi bi-gear"></i> Peraturan</Nav.Link>
+            <Nav.Link href="#Admin" className="text-nav"><i className="bi bi-people"></i> Admin</Nav.Link>
+            <Nav.Link href="#Informasi" className="text-nav"><i className="bi bi-info-circle"></i> Informasi</Nav.Link>
+            <Nav.Link href="#Komentar" className="text-nav"><i className="bi bi-chat-dots"></i> Komentar</Nav.Link>
+            <Nav.Link href="#Pendaftaran" className="text-nav"><i className="bi bi-ui-checks"></i> Pendaftaran</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
