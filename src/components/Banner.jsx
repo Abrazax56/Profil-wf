@@ -9,7 +9,7 @@ export default function Banner() {
         <audio id="aud" loop="true" preload="true">
           <source src="/audio/audio.mp3" type="audio/mp3"/>
         </audio>
-        <a href="#secone" className="start px-5 py-1 fs-7 text-warning" onClick={() => document.getElementById('aud').play()}>Mulai <i className="bi bi-arrow-down-short"></i></a>
+        <a href="#Tentang" className="start px-5 py-1 fs-7 text-warning" onClick={() => document.getElementById('aud').play()}>Mulai <i className="bi bi-arrow-down-short"></i></a>
       </div>
     </div>
   )

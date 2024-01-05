@@ -356,6 +356,15 @@ html {
   border-right: 1px solid rgba(255, 155, 0, .4);
   border-radius: 5px 10px 0 0;
 }
+.logs {
+  overflow: hidden;
+  border: 1px solid rgba(255, 155, 0, 1);
+  border-radius: 5px;
+  width: 100%;
+}
+.gmbr {
+  width: 100%;
+}
 @media (min-width: 750px) {
   .art, .art2 {
     width: 65%;
@@ -372,6 +381,9 @@ html {
   }
 }
 @media (min-width: 950px) {
+  .logs {
+    width: 50%;
+  }
   .judul {
     font-size: 5rem;
   }

@@ -30,7 +30,7 @@ function ListAdmins() {
                   </div>
                 </div>
               </div>
-              <img src={e.photo} className="gambar w-100" />
+              <img src={e.photo} className="gambar w-100" alt={e.nama}/>
             </Carousel.Item>
           ))
         }
